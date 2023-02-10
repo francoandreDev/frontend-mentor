@@ -31,7 +31,7 @@ body {
     background-color: var(--bg-card);
     padding: 2rem;
     border-radius: 2em;
-    max-width: 24rem;
+    max-width: 25rem;
     position: relative;
 }
 
@@ -63,6 +63,7 @@ body * {
 }
 
 .subtitle {
+    padding-top: 1rem;
     font-weight: 700;
     color: var(--color-font-subtitle);
 }
