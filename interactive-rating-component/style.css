@@ -29,16 +29,16 @@ body {
 
 .card {
     background-color: var(--bg-card);
-    padding: 3rem 2rem;
-    border-radius: 1em;
-    max-width: 25rem;
+    padding: 2rem;
+    border-radius: 2em;
+    max-width: 24rem;
     position: relative;
 }
 
 .card > .reveal {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 body * {
