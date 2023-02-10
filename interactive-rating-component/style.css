@@ -63,7 +63,7 @@ body * {
 }
 
 .subtitle {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     font-weight: 700;
     color: var(--color-font-subtitle);
 }
