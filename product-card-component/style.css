@@ -1,0 +1,151 @@
+:root {
+    --color-cream: hsl(30, 38%, 92%);
+    --color-cyan: hsl(158, 36%, 37%);
+    --color-dark-cyan: hsl(158, 36%, 20%);
+    --color-dark-blue: hsl(212, 21%, 14%);
+    --color-grayish-blue: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-fraunces: 'Fraunces', serif;
+    --fw-thin: 500;
+    --fw-fat: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-cream);
+    min-height: 100vh;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-thin);
+}
+
+.card {
+    background-color: var(--color-white);
+    width: clamp(12rem, 100%, 21rem);
+    border-radius: 0.5em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: clamp(7rem, 100%, 40rem);
+    }
+
+    .container-product-image > img {
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+}
+
+.category {
+    height: 1ch;
+    width: 100%;
+    position: relative;
+}
+
+.category::before {
+    content: 'Perfume';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.6em;
+    letter-spacing: 0.4em;
+    color: var(--color-grayish-blue);
+}
+
+.name {
+    font-weight: var(--fw-fat);
+    font-family: var(--ff-fraunces);
+    color: var(--color-dark-blue);
+    font-size: 180%;
+}
+
+span.flex {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.price {
+    color: var(--color-cyan);
+    font-size: 2rem;
+    font-weight: var(--fw-fat);
+    font-family: var(--ff-fraunces);
+}
+
+.info {
+    color: var(--color-grayish-blue);
+    font-weight: var(--fw-thin);
+    font-size: 0.75em;
+    letter-spacing: .05em;
+    line-height: 1.2rem;
+}
+
+.price.info {
+    text-decoration: line-through;
+    font-size: .8rem;
+}
+
+button {
+    border-color: transparent;
+    background-color: var(--color-cyan);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: var(--fw-fat);
+}
+
+button:hover {
+    --color-cyan: var(--color-dark-cyan);
+}
+
+.cart-icon {
+    width: 2.5ch;
+    aspect-ratio: 1/1;
+}
+
+button p {
+    color: var(--color-white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
