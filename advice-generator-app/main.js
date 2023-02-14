@@ -1,9 +1,7 @@
-const diceElement = document.querySelector('.circle');
-const baseUrl = 'https://api.adviceslip.com/advice';
-
 getRandomAdvice();
 
 function getRandomAdvice() {
+    const baseUrl = 'https://api.adviceslip.com/advice';
     fetch(baseUrl)
         .then((res) => res.json())
         .then(({ slip }) => {
