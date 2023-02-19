@@ -85,7 +85,7 @@ body * {
 .circle {
     border-radius: 50%;
     background-image: linear-gradient(to bottom, var(--circle-color-violet-blue), transparent);
-    width: calc(20% + 4em);
+    width: 7em;
     aspect-ratio: 1/1;
     position: relative;
 }
